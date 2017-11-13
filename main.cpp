@@ -48,7 +48,7 @@ int main(){
 
 //Declare variables
 
-const string OUPUT_FILE_NAME = "composite-username.bmp"; //output file name
+const string OUPUT_FILE_NAME = "composite-halkaabi2.bmp"; //output file name
 
 vector<string> filenames;     //vector of file names
 const int MAX_NUM_FILES = 10; //maximum number of files allowed
