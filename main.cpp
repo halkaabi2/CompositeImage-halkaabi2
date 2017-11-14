@@ -50,7 +50,7 @@ int main(){
 
 const string OUPUT_FILE_NAME = "composite-halkaabi2.bmp"; //output file name
 
-vector<string> filenames;     //vector of file names
+vector<string> filenames; //vector of file names
 const int MAX_NUM_FILES = 10; //maximum number of files allowed
 
 //read files names
@@ -104,8 +104,8 @@ img.open(filename);
 PixelMatrix pixelMatrix = img.toPixelMatrix();
 
 //retrieve the height and width
-width = pixelMatrix.size(); //rows
-height = pixelMatrix[0].size(); //columns
+height = pixelMatrix.size(); //rows
+width = pixelMatrix[0].size(); //columns
 }
 }else{
 cout << "File does not exit or file is not BMP or ";
@@ -200,9 +200,9 @@ pixelMatrix[r][c].green += pixelMatrices[i][r][c].green;
 }
 
 //calculate average
-pixelMatrix[r][c].red = pixelMatrix[r][c].red  / pixelMatrices.size();
-pixelMatrix[r][c].blue = pixelMatrix[r][c].blue  / pixelMatrices.size();
-pixelMatrix[r][c].green = pixelMatrix[r][c].green  / pixelMatrices.size();
+pixelMatrix[r][c].red = pixelMatrix[r][c].red / pixelMatrices.size();
+pixelMatrix[r][c].blue = pixelMatrix[r][c].blue / pixelMatrices.size();
+pixelMatrix[r][c].green = pixelMatrix[r][c].green / pixelMatrices.size();
 }
 }
 
@@ -213,3 +213,4 @@ resultImage.fromPixelMatrix(pixelMatrix);
 //save to file
 resultImage.save(outputFileName);
 }
+
